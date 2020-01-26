@@ -8,12 +8,15 @@ Clone the repo
 - Run `composer install`
 - Run `cp .env.example .env`
 - Run `php artisan key:generate`
-- Set your database configration to .env 
+- Set your database configration to .env
+- If your machine don't have redis server install it. 
+- set brodcast drive to redis
 - Run `php artisan migrate --seed`
 
 
 ## Run Application
 - run `php artisan serve`
+- run `npm install -g laravel-echo-server` if you have not already install
 - run `laravel-echo-server start`
 - run  `php artisan queue:work`
 
